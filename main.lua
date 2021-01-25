@@ -6,7 +6,7 @@ input["vehicle_id"] - the vehicle id
 please note, this is automatically assigned in event as client_id, client_exec, and vehicle_id to avoid duplicate code
 --]]
 addonname = "test" -- PLEASE FILL THIS OUT
--- the dofile requires this to load the hooks
+-- the dofile requires this to load the hooks & helpers
 
 function event(type, input) -- type = event type, input is a table of data
   client_id = nil
