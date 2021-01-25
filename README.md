@@ -8,12 +8,12 @@
  Remember to change "addonname" to the name of the folder that your main.lua resides in!
  
  # Documentation
-  input[""] holds a couple of variables
-  for vehicle events:
-  input["client_id"]
-  input["vehicle_id"]
-  for player connect/disconnect events:
-  input["client_id"]
-  for chat event(s)
-  input["client_id"]
-  input["msg"]
+  <p>input[""] holds a couple of variables for various events</p>
+  <p>for vehicle events:</p>
+  <p>input["client_id"]</p>
+  <p>input["vehicle_id"]</p>
+  <p>for player connect/disconnect events:</p>
+  <p>input["client_id"]</p>
+ <p> for chat event(s)</p>
+  <p>input["client_id"]</p>
+  <p>input["msg"]</p>
