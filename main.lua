@@ -1,8 +1,8 @@
 -- table structure:
 --[[
 input["client_id"] - the client id
-input["message"] - a message, used primarily in chat but maybe for errors and other stuff
 input["vehicle_id"] - the vehicle id
+input["message"] - a message, used by chat. not auto assigned
 please note, this is automatically assigned in event as client_id, and vehicle_id to avoid duplicate code
 client_exec is what you call getName() on and other things - it's the executor of the command/event - it is also automatically assigned
 
