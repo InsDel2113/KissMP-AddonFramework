@@ -2,7 +2,7 @@
 --[[
 input["client_id"] - the client id
 input["vehicle_id"] - the vehicle id
-input["message"] - a message, used by chat. not auto assigned
+input["message"] - a message, used by chat. not auto created, get with input["message"]
 please note, this is automatically assigned in event as client_id, and vehicle_id to avoid duplicate code
 client_exec is what you call getName() on and other things - it's the executor of the command/event - it is also automatically assigned
 
