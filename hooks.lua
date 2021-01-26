@@ -38,3 +38,4 @@ hooks.register("OnPlayerDisconnected", "PPlayerLeaveEevent", function(cid)
   }
   event("OnPlayerDisconnected", input)
 end)
+
