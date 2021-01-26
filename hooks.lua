@@ -1,34 +1,40 @@
-hooks.register("OnChat", "ChatEvent", function(client_id, msg)
-    local input = {}
-    input["client_id"] = client_id
-    input["message"] = msg
-    event("OnChat", input)
-  end)
-  hooks.register("OnVehicleRemoved", "VehicleRemovedEvent", function(vehicle_id, client_id)
-    local input = {}
-    input["client_id"] = client_id
-    input["vehicle_id"] = vehicle_id
-    event("OnVehicleRemoved", input)
-  end)
-  hooks.register("OnVehicleSpawned", "VehicleSpawnedEvent", function(vehicle_id, client_id)
-    local input = {}
-    input["client_id"] = client_id
-    input["vehicle_id"] = vehicle_id
-    event("OnVehicleSpawned", input)
-  end)
-  hooks.register("OnVehicleResetted", "VehicleResetEvent", function(vehicle_id, client_id)
-    local input = {}
-    input["client_id"] = client_id
-    input["vehicle_id"] = vehicle_id
-    event("OnVehicleResetted", input)
-  end)
-  hooks.register("OnPlayerConnected", "PlayerConnectEvent", function(client_id)
-    local input = {}
-    input["client_id"] = client_id
-    event("OnPlayerConnected", input)
-  end)
-  hooks.register("OnPlayerDisconnected", "PlayerLeaveEevent", function(client_id)
-    local input = {}
-    input["client_id"] = client_id
-    event("OnPlayerDisconnected", input)
-  end)
+hooks.register("OnChat", "CChatEvent", function(cid, msg)
+  local input = {
+    message = msg,
+    client_id = cid
+  }
+  event("OnChat", input)
+end)
+hooks.register("OnVehicleRemoved", "VVehicleRemovedEvent", function(vid, cid)
+  local input = {
+    client_id = cid,
+    vehicle_id = vid
+  }
+  event("OnVehicleRemoved", input)
+end)
+hooks.register("OnVehicleSpawned", "VVehicleSpawnedEvent", function(vid, cid)
+  local input = {
+    client_id = cid,
+    vehicle_id = vid
+  }
+  event("OnVehicleSpawned", input)
+end)
+hooks.register("OnVehicleResetted", "VVehicleResetEvent", function(vid, cid)
+  local input = {
+    client_id = cid,
+    vehicle_id = vid
+  }
+  event("OnVehicleResetted", input)
+end)
+hooks.register("OnPlayerConnected", "PPlayerConnectEvent", function(cid)
+  local input = {
+    client_id = cid
+  }
+  event("OnPlayerConnected", input)
+end)
+hooks.register("OnPlayerDisconnected", "PPlayerLeaveEevent", function(cid)
+  local input = {
+    client_id = cid
+  }
+  event("OnPlayerDisconnected", input)
+end)
